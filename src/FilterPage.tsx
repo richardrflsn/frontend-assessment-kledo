@@ -180,19 +180,19 @@ export default function FilterPage() {
   return (
     <div className="flex flex-col md:flex-row min-h-screen">
       {/* Sidebar */}
-      <aside className="w-full md:w-80 p-8 shadow-sm border border-gray-200 shrink-0 bg-[#F9FAFC]">
+      <aside className="p-8 w-full md:w-80 bg-[#F9FAFC] border border-gray-200 shrink-0">
         <div className="mb-14 flex justify-center items-center gap-3">
           <img
             src="/images/globe-icon.png"
             alt="Globe Icon"
-            className="w-10 h-10 p-2 bg-blue-100 rounded-full "
+            className="p-2 w-10 h-10 bg-blue-100 rounded-full "
           />
           <h1 className="text-md font-semibold">Frontend Assessment</h1>
         </div>
 
         <div className="flex flex-col justify-center items-center">
           <div className="mb-8 w-full">
-            <h3 className="mb-8 text-xs tracking-widest text-gray-400 uppercase font-semibold">
+            <h3 className="mb-8 text-xs font-semibold uppercase tracking-widest text-gray-400">
               FILTER WILAYAH
             </h3>
             <CustomCombobox
@@ -236,7 +236,7 @@ export default function FilterPage() {
           {hasSelection && (
             <button
               type="button"
-              className="w-full py-4 text-sm font-medium bg-blue-50 border border-blue-500 rounded-2xl flex items-center justify-center gap-2"
+              className="py-4 w-full flex items-center justify-center text-sm font-medium bg-blue-50 border border-blue-500 rounded-2xl gap-2"
               onClick={() => setSearchParams({})}
             >
               <img
@@ -251,9 +251,9 @@ export default function FilterPage() {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 bg-[#F9FAFC] flex flex-col min-h-screen">
+      <main className="flex-1 flex flex-col min-h-screen bg-[#F9FAFC] ">
         {/* Breadcrumb */}
-        <div className="w-full px-8 py-6 bg-white border border-gray-200">
+        <div className="px-8 py-6 w-full bg-white border border-gray-200">
           <nav
             className="text-sm font-semibold breadcrumb"
             aria-label="breadcrumb"
