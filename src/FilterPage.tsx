@@ -236,15 +236,13 @@ export default function FilterPage() {
           {hasSelection && (
             <button
               type="button"
-              className="w-full h-full py-4 text-sm font-medium bg-blue-50 border border-blue-500 rounded-2xl"
-              onClick={() => {
-                setSearchParams({});
-              }}
+              className="w-full py-4 text-sm font-medium bg-blue-50 border border-blue-500 rounded-2xl flex items-center justify-center gap-2"
+              onClick={() => setSearchParams({})}
             >
               <img
                 src="/images/clear-filters-icon.png"
                 alt="Reset Icon"
-                className="w-4 h-4 inline mr-2"
+                className="w-6 h-6"
               />
               RESET
             </button>
