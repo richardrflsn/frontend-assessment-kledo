@@ -83,7 +83,7 @@ function CustomCombobox<T extends { id: number; name: string }>({
 
   return (
     <div className="mb-8" ref={wrapperRef}>
-      <h2 className="mb-2 text-sm font-medium uppercase text-gray-400">
+      <h2 className="mb-2 text-xs font-medium uppercase text-gray-400">
         {label}
       </h2>
       <div className="relative">
@@ -190,8 +190,8 @@ export default function FilterPage() {
           <h1 className="text-md font-semibold">Frontend Assessment</h1>
         </div>
 
-        <div className="flex-row justify-center items-center">
-          <div className="mb-14">
+        <div className="flex flex-col justify-center items-center">
+          <div className="mb-8 w-full">
             <h3 className="mb-8 text-xs tracking-widest text-gray-400 uppercase font-semibold">
               FILTER WILAYAH
             </h3>
