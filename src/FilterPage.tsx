@@ -262,12 +262,12 @@ export default function FilterPage() {
           >
             <ol className="flex items-center space-x-2">
               <li className="text-gray-400">Indonesia</li>
-              {activeSelections.map((selection, i) => (
-                <li key={i} className="flex items-center gap-2">
+              {activeSelections.map((selection, index) => (
+                <li key={index} className="flex items-center gap-2">
                   <LeftArrowIcon />
                   <span
                     className={
-                      i === activeSelections.length - 1
+                      index === activeSelections.length - 1
                         ? "text-blue-400"
                         : "text-gray-400"
                     }
