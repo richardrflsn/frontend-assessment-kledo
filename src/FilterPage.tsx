@@ -171,7 +171,7 @@ export default function FilterPage() {
 
   const selections = [
     { label: "Provinsi", data: selectedProvince },
-    { label: "Kota/Kabupaten", data: selectedRegency },
+    { label: "Kota / Kabupaten", data: selectedRegency },
     { label: "Kecamatan", data: selectedDistrict },
   ];
   const activeSelections = selections.filter((s) => s.data);
