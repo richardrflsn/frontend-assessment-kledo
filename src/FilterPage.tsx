@@ -259,16 +259,18 @@ export default function FilterPage() {
             aria-label="breadcrumb"
           >
             <ol className="flex items-center space-x-2">
-              <li className="text-gray-400">Indonesia</li>
+              <li className="text-sm tracking-wider text-gray-400">
+                Indonesia
+              </li>
               {activeSelections.map((selection, index) => (
                 <li key={index} className="flex items-center gap-2">
                   <LeftArrowIcon />
                   <span
-                    className={
+                    className={`text-sm tracking-wider ${
                       index === activeSelections.length - 1
                         ? "text-blue-400"
                         : "text-gray-400"
-                    }
+                    }`}
                   >
                     {selection.data!.name}
                   </span>
